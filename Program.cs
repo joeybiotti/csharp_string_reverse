@@ -6,7 +6,14 @@ namespace csharp_reverse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string input = "hello world"; 
+            string output = ""; 
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                output += input[i];
+            }
+            Console.WriteLine("Original String: " + input);
+            Console.WriteLine("Reversed String: " + output);
         }
     }
 }
