@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace csharp_reverse
 {
@@ -7,9 +8,7 @@ namespace csharp_reverse
         static void Main(string[] args)
         {
             string input = "hello world"; 
-            char[] inputarray = input.ToCharArray();
-            Array.Reverse(inputarray);
-            string output = new string(inputarray);
+            string output = new string(input.ToCharArray().Reverse().ToArray());
 
             Console.WriteLine("Original string: " + input);
             Console.WriteLine("Reversed string: " + output);
